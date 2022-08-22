@@ -1,6 +1,11 @@
-function App() {
+import Oi from "./Oi"
+
+const App = () => {
   return (
-    <p>Hello world!!</p>
+    <>
+      <Oi />
+      <Oi />
+    </>
   );
 }
 
