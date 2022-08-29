@@ -1,4 +1,12 @@
 .Header{
-    background-color: black;
-    padding: 100px;
+    background-color: red;
+    padding: 15px;
+}
+
+.Header .container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 1000px;
+    align-items: center;
 }
