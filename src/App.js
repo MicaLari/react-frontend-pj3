@@ -4,7 +4,10 @@ import Home from "./pages/Home"
 
 const App = () => {
   return (
-   <Home />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/contact' element={<Contact />} />
+    </Routes>
   );
 }
 
