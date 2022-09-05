@@ -9,10 +9,11 @@ const Contact = () => {
     <>
       <Header />
       <MainContainer>
+        <Link to='/'>Home</Link>
         <h1>Contact</h1>
 
         <p>Aqui é o contact</p>
-        <Link to='/'>Home</Link>
+        
       </MainContainer>
       <Footer />
     </>

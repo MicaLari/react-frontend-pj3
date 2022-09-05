@@ -9,7 +9,6 @@ const Home = () => {
     <>
       <Header />
       <MainContainer>
-        <div className="container">
           <Link to='/contact'>Contact</Link>
           
           <h1>Home</h1>
@@ -22,7 +21,7 @@ const Home = () => {
           <p>Na pesquisa de 2018 sobre hábitos de desenvolvedores do site Stack Overflow, o React foi a terceira biblioteca ou framework mais citado pelos usuários e desenvolvedores profissionais, ficando atrás somente do Node.js e Angular, respectivamente.</p>
                 
 
-        </div>
+        
    
       </MainContainer>
       <Footer/>
