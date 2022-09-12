@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <Header />
       <MainContainer>
-          <Link to='/contact'>Contact</Link>
+          {/* <Link to='/contact'>Contact</Link> */}
           
           <h1>Home</h1>
 
