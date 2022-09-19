@@ -1,0 +1,28 @@
+.avatar {
+    background: #CCC;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 0;
+}
+.card {
+    width: 300px;
+    background: #EEE;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+}
+.userName {
+    margin: 0;
+    font-size: 0.9rem;
+}
+.text {
+    margin: 0;
+}
+.box {
+    width: 235px;
+}
