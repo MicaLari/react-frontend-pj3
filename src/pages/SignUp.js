@@ -10,7 +10,7 @@ const SignUp = () => {
         formUser.append("email", user.email)
         formUser.append("pass", user.pass)
         formUser.append("avatar", user.avatar)
-        const response = await fetch('http://localhost/pj3/api-php-ifsp-2022-2/user/sign-up', {
+        const response = await fetch('http://localhost/api-php-ifsp-2022-2/user/signup', {
             method: 'POST',
             body: formUser
         })
