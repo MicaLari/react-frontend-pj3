@@ -26,3 +26,8 @@
 .box {
     width: 235px;
 }
+.buttonLink {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
