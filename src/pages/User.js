@@ -11,7 +11,7 @@ const User = () => {
   const [user, setUser] = useState({})
 
   const requestUserById = async (id) => {
-const response = await fetch(`http://localhost/api-php-ifsp-2022-2/user/by-id?id=${id}`)
+  const response = await fetch(`http://localhost/api-php-ifsp-2022-2/user/by-id?id=${id}`)
     const result = await response.json()
     console.log(result?.success?.message)
     if(result?.error){
