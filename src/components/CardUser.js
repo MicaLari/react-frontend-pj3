@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import {TbTrash as IconTrash} from 'react-icons/tb'
+import { API_PATH  } from "../config"
 import './Card.css'
 
 const CardUser = ({avatarUrl, name, children, id, users, setUsers}) => {
@@ -7,7 +8,7 @@ const CardUser = ({avatarUrl, name, children, id, users, setUsers}) => {
     // const {card, avatar, box, userName, text} = style
 
     const deleteUser = async (id) =>{
-        const response = await fetch('http://localhost/api-php-ifsp-2022-2/user/delete',{
+        const response = await fetch(`${API_PATH}user/delete`,{
             method: 'DELETE',
             body: JSON.stringify({id: id})
         })
@@ -43,3 +44,6 @@ const CardUser = ({avatarUrl, name, children, id, users, setUsers}) => {
   
   
   export default CardUser
+ 
+
+  
