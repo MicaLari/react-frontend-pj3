@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
-import {TbTrash as IconTrash} from 'react-icons/tb'
+import {TbTrash as IconTrash,TbEdit as IconEdit} from 'react-icons/tb'
 import { API_PATH  } from "../config"
 import './Card.css'
 
-const CardUser = ({avatarUrl, name, children, id, users, setUsers}) => {
+const CardUser = ({avatarUrl, name, children, id, users, setUsers, setShowModal, setUserToEdit }) => {
 
     // const {card, avatar, box, userName, text} = style
 
@@ -20,6 +20,16 @@ const CardUser = ({avatarUrl, name, children, id, users, setUsers}) => {
             console.error(result?.error)
         }
     }  
+
+    const handleEdit = () =>{
+        setShowModal(true)
+        setUserToEdit({
+            id,
+            name,
+            email:children,
+            avatar:avatarUrl,
+        })
+    }
     
     return (
         
@@ -34,6 +44,7 @@ const CardUser = ({avatarUrl, name, children, id, users, setUsers}) => {
                         <p className='text'>{children}</p>
                     </Link>
                     <IconTrash className="buttonLink" onClick={() => deleteUser(id)} />
+                    <IconEdit className="buttonLink" onClick={() =>handleEdit()}/>
 
                 </div>
             </div>
